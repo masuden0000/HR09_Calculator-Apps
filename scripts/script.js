@@ -43,10 +43,9 @@ function keyboardInputHandler(e) {
     res.value = res.value.slice(0, -1);
   }
 }
-    
-window.addEventListener('load', function() {
 
-  setTimeout(function() {
+window.addEventListener('load', function () {
+  setTimeout(function () {
     preloader.style.opacity = '0';
     preloader.style.display = 'none';
   }, 1000);

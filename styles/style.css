@@ -3,9 +3,13 @@
   -webkit-appearance: none;
 }
 
+body {
+  background-color: #16171b !important;
+}
+
 h1 {
   margin-bottom: 1.5%;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-weight: normal;
 }
 
@@ -61,6 +65,7 @@ a {
   height: 100vh;
   width: 100%;
   position: absolute;
+  z-index: 99;
   transition: opacity .6s;
 }
 
@@ -123,6 +128,11 @@ span:before {
   box-shadow: 0 0 20px #fff000;
 }
 
+.background {
+  height: 100vh;
+  position: absolute;
+}
+
 @keyframes animateC {
   0% {
     transform: rotate(0deg);
@@ -140,5 +150,13 @@ span:before {
 
   100% {
     transform: rotate(405deg);
+  }
+}
+
+@media (max-width: 1300px) {
+  .background {
+    justify-content: center;
+    z-index: -1;
+    width: 100%;
   }
 }
